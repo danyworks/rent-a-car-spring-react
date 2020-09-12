@@ -33,7 +33,7 @@ public class Car {
 
 
 
-    private boolean isProcessed;
+    private boolean inWorkshop;
     private String Created_At;
     private String Updated_At;
 }

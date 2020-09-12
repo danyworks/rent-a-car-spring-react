@@ -2,6 +2,7 @@ package com.car.rentals.web.controllers;
 
 import com.car.rentals.web.models.Car;
 import com.car.rentals.web.services.CarService;
+import com.car.rentals.web.services.CustomerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin
 @RestController
 @RequestMapping("api/v1")
 public class RestfulController {
@@ -19,6 +21,8 @@ public class RestfulController {
     @Autowired
     private CarService carService;
 
+    @Autowired
+    private CustomerService customerService;
 
     /**
      * Retrieve Operations
@@ -35,7 +39,7 @@ public class RestfulController {
     }
 
     /**
-     * Create Operations
+     * Create Operatio
      * @param car
      * @return
      */
