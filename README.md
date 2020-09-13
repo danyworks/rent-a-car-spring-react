@@ -58,4 +58,59 @@ you will require to enter
 
 The system must be able to call a list of cars and customers from the database
 
+In order to envoke an endpoint the following schema is to be followed
 
+
+##### GET API FOR THE COLLECTIONS MENTIONED ABOVE
+
+    http://localhost:8085/car/get/all
+    http://localhost:8085/car/get/{id}    
+    http://localhost:8085/customer/get/all
+    http://localhost:8085/customer/get/{id}    
+    http://localhost:8085/employee/get/all
+    http://localhost:8085/employee/get/{id}    
+    http://localhost:8085/sales/get/all
+    http://localhost:8085/sales/get/{id}    
+    http://localhost:8085/order/get/all
+    http://localhost:8085/order/get/{id}    
+                    
+##### POST API FOR THE COLLECTIONS MENTIONED ABOVE
+
+    http://localhost:8085/car/create    
+    http://localhost:8085/customer/create    
+    http://localhost:8085/employee/create   
+    http://localhost:8085/sales/get/create   
+    http://localhost:8085/order/create
+ 
+ The model details are to be posted in Request Body as application/json
+
+
+##### PUT API FOR THE COLLECTIONS MENTIONED ABOVE
+
+    http://localhost:8085/car/update    
+    http://localhost:8085/customer/update    
+    http://localhost:8085/employee/update   
+    http://localhost:8085/sales/get/update   
+    http://localhost:8085/order/update
+ 
+ The model details are to be posted in Request Body as application/json, 
+ moreover the id must be included in the Request Body to send a PUT Request.
+  
+##### DELETE API FOR THE COLLECTIONS MENTIONED ABOVE
+
+    http://localhost:8085/car/delete/{id}    
+    http://localhost:8085/customer/delete/{id}    
+    http://localhost:8085/employee/delete/{id}   
+    http://localhost:8085/sales/get/delete/{id}   
+    http://localhost:8085/order/delete/{id}
+ 
+ The model details are to be posted in Request Body as application/json, 
+ moreover the id must be included in the Path variable to send a delete Request.
+ 
+ 
+ 
+ 
+         
+        
+                    
+    
